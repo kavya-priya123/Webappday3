@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Webappday1</display-name>
+  
+  <servlet>
+  		<servlet-name>welcome</servlet-name>
+  		<servlet-class>ai.jobiak.app.Welcome</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>welcome</servlet-name>
+  		<url-pattern>/begin</url-pattern>
+	</servlet-mapping>
+	
+	
+	 <servlet>
+  		<servlet-name>introduction</servlet-name>
+  		<servlet-class>ai.jobiak.app.Introduction</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>introduction</servlet-name>
+  		<url-pattern>/user</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+  		<servlet-name>fact</servlet-name>
+  		<servlet-class>ai.jobiak.app.Factorial</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>fact</servlet-name>
+  		<url-pattern>/users</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+  		<servlet-name>jdbcServlet</servlet-name>
+  		<servlet-class>ai.jobiak.app.JdbcServlet</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>jdbcServlet</servlet-name>
+  		<url-pattern>/connect</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+  		<servlet-name>jdbc1</servlet-name>
+  		<servlet-class>ai.jobiak.app.Jdbc1</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>jdbc1</servlet-name>
+  		<url-pattern>/connects</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+  		<servlet-name>jdbc2</servlet-name>
+  		<servlet-class>ai.jobiak.app.Jdbc2</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>jdbc2</servlet-name>
+  		<url-pattern>/start</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>prime</servlet-name>
+	<servlet-class>ai.jobiak.app.Prime</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>prime</servlet-name>
+	<url-pattern>/move</url-pattern>
+	</servlet-mapping>
+	<servlet>
+  		<servlet-name>QueryString</servlet-name>
+  		<servlet-class>ai.jobiak.app.QueryStringServlet</servlet-class>
+  		<load-on-startup>1</load-on-startup> 
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>QueryString</servlet-name>
+  		<url-pattern>/send</url-pattern>
+	</servlet-mapping>
+	<servlet>
+  		<servlet-name>lifecycle</servlet-name>
+  		<servlet-class>ai.jobiak.app.LifeCycleServlet</servlet-class>
+  		<load-on-startup>1</load-on-startup> 
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>lifecycle</servlet-name>
+  		<url-pattern>/go</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+  		<servlet-name>Calculator</servlet-name>
+  		<servlet-class>ai.jobiak.app.CalculatorServlet</servlet-class>
+  		
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>Calculator</servlet-name>
+  		<url-pattern>/calculator</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+	<welcome-file>links.html</welcome-file>
+	</welcome-file-list>
+	
+</web-app>
